@@ -1,8 +1,38 @@
 body {
+ 
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: paleturquoise;
+}
+
+nav {
+  background-color: peachpuff;
+  padding: 3vmin;
+}
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+	
+.delete-form button {
+  color: white;
+  background-color: crimson;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+li {
+  list-style: none;
+  padding: 1vmin;
 }

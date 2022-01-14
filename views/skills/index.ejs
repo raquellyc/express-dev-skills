@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 
-<h1>Skills</h1>
+<h1>skills</h1>
 <ul>
   <% skills.forEach(function(s) { %>
     <li>
@@ -8,15 +8,15 @@
         method="POST"
         class="delete-form"
       >
-        <button type="submit">X</button>
+        <button id='done' type="submit">X</button>
       </form>
-      <a href="/skills/<%= s.id %>">
+      <a id='skillitems' href="/skills/<%= s.id %>">
         <li>
           <%= s.skill %>
             - 
-          <%= s.done ? 'done' : 'not done' %>
-        </li>
-      <% }); %>
-    </ul>
+          <%= s.done ? 'mastered' : 'learning' %>
+      </li>
+  <% }); %>
+</ul>
 
 <%- include('../partials/footer') %>
